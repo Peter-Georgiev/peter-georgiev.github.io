@@ -2,140 +2,100 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SoftUn iBlog</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link type="text/css" rel="stylesheet" href="styles/style.css"/>
-    <script src="scripts/jquery-1.10.2.js"></script>
-    <script src="scripts/bootstrap.js"></script>
-</head>
+    <title>Peter Georgiev</title>
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--JQUERY JS-->
+    <script src="js/jquery-3.3.1.min.js"></script>
 
+</head>
 <body>
-<header>
-    <div class="navbar navbar-default navbar-fixed-top text-uppercase">
-        <div class="container">
-            <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">SoftUni Blog</a>
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="register.html">Register</a></li>
-                    <li><a href="login.html">Login</a></li>
-                </ul>
-            </div>
+<header class="card-header">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="float-left">
+            <a class="navbar-brand text-light font-weight-bold" href="#">georgiev.</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto font-weight-bold">
+                <li class="nav-item active">
+                    <a class="nav-link text-light" href="#">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="#">MY WORK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled text-light" href="#">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container text-center mt-3 mb-3">
+        <img class="rounded-circle w-25" src="images/user.jpg" alt="user">
+        <h1 class="h1 text-light font-weight-bold text-center mt-2">PETER GEORGIEV</h1>
+        <p class="text-light">System Administrator & Software Developer</p>
     </div>
 </header>
-
-<main>
-    <div class="container body-content">
-        <div class="row">
-            <div class="col-sm-6">
-                <article>
-                    <header>
-                        <h2>Why Choosing the Right Storage Infrastructure.</h2>
-                    </header>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Alias aut autem cumque, cupiditate dignissimos eos id illum libero maiores molestiae nihil,
-                        porro possimus quae quo, saepe tempore totam. Animi, earum.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ab aperiam aspernatur atque cum doloremque dolorum,
-                        eligendi id laudantium perferendis repellendus?
-                        Adipisci eum molestiae porro quaerat quibusdam repellat ut vel voluptas?
-                        Alias aliquid commodi esse illum, ipsa,
-                        magnam necessitatibus nostrum omnis quaerat quis recusandae sint tenetur unde!
-                        Accusamus asperiores deserunt dicta dolores eos fugit ipsa ipsam quasi repudiandae vel, v
-                        ero voluptates!
-                    </p>
-
-                    <small class="author">
-                        Steve Fowler
-                    </small>
-
-                    <footer>
-                        <div class="pull-right">
-                            <a class="btn btn-default btn-xs" href="viewpost.html">Read more &raquo;</a>
-                        </div>
-                    </footer>
-                </article>
-            </div>
-            <div class="col-md-6">
-                <article>
-                    <header>
-                        <h2>Why Choosing the Right Storage Infrastructure.</h2>
-                    </header>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Alias aut autem cumque, cupiditate dignissimos eos id illum libero maiores molestiae nihil,
-                        porro possimus quae quo, saepe tempore totam. Animi, earum.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ab aperiam aspernatur atque cum doloremque dolorum,
-                        eligendi id laudantium perferendis repellendus?
-                        Adipisci eum molestiae porro quaerat quibusdam repellat ut vel voluptas?
-                        Alias aliquid commodi esse illum, ipsa,
-                        magnam necessitatibus nostrum omnis quaerat quis recusandae sint tenetur unde!
-                        Accusamus asperiores deserunt dicta dolores eos fugit ipsa ipsam quasi repudiandae vel, v
-                        ero voluptates!
-                    </p>
-
-                    <small class="author">
-                        Steve Fowler
-                    </small>
-
-                    <footer>
-                        <div class="pull-right">
-                            <a class="btn btn-default btn-xs" href="viewpost.html">Read more &raquo;</a>
-                        </div>
-                    </footer>
-                </article>
-            </div>
-            <div class="col-md-6">
-                <article>
-                    <header>
-                        <h2>Why Choosing the Right Storage Infrastructure.</h2>
-                    </header>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Alias aut autem cumque, cupiditate dignissimos eos id illum libero maiores molestiae nihil,
-                        porro possimus quae quo, saepe tempore totam. Animi, earum.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Ab aperiam aspernatur atque cum doloremque dolorum,
-                        eligendi id laudantium perferendis repellendus?
-                        Adipisci eum molestiae porro quaerat quibusdam repellat ut vel voluptas?
-                        Alias aliquid commodi esse illum, ipsa,
-                        magnam necessitatibus nostrum omnis quaerat quis recusandae sint tenetur unde!
-                        Accusamus asperiores deserunt dicta dolores eos fugit ipsa ipsam quasi repudiandae vel, v
-                        ero voluptates!
-                    </p>
-
-                    <small class="author">
-                        Steve Fowler
-                    </small>
-
-                    <footer>
-                        <div class="pull-right">
-                            <a class="btn btn-default btn-xs" href="viewpost.html">Read more &raquo;</a>
-                        </div>
-                    </footer>
-                </article>
-            </div>
+<main class="container mt-5 d-none">
+    <div class="row">
+        <div class="jumbotron m-auto mr-2">
+            <h1 class="display-5">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+        <div class="jumbotron m-auto mr-2">
+            <h1 class="display-5">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+        <div class="jumbotron m-auto mr-2">
+            <h1 class="display-5">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
+        </div>
+        <div class="jumbotron m-auto mr-2">
+            <h1 class="display-5">Hello, world!</h1>
+            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention
+                to featured content or information.</p>
+            <hr class="my-4">
+            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+            </p>
         </div>
     </div>
 </main>
 
-<footer>
-    <div class="container modal-footer">
-        <p>&copy; 2016 - Software University Foundation</p>
-    </div>
-</footer>
 
+<!--Bootstrap JS-->
+<script src="libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!--Custom JS-->
+<script src="js/app.js"></script>
 </body>
 </html>
